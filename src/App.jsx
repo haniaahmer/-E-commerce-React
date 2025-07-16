@@ -5,7 +5,7 @@ import { fetchProducts, fetchCategories } from './store/productSlice';
 import store from './store';
 import Home from './pages/Home';
 import Products from './pages/Products';
-import Product_Detail from './pages/Product_Detail';
+import Product_Detail from './pages/ProductDetails';
 import Wishlist from './pages/Wishlist';
 import Cart from './pages/Cart';
 import Checkout from './pages/Checkout';
@@ -13,6 +13,7 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useEffect } from 'react';
 import OrderConfirmation from './pages/OrderConfirmation';
+import ProductDetails from './pages/ProductDetails';
 
 // Create a child component to handle dispatch logic
 const AppContent = () => {
@@ -27,7 +28,7 @@ const AppContent = () => {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/products" element={<Products />} />
-      <Route path="/product/:id" element={<Product_Detail />} />
+      <Route path="/product/:id" element={<ProductDetails />} />
       <Route path="/wishlist" element={<Wishlist />} />
       <Route path="/cart" element={<Cart />} />
       <Route path="/checkout" element={<Checkout />} />

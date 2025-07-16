@@ -7,7 +7,7 @@ import BelowBar from '../components/Bars/BelowBar';
 import ProductDetail from '../components/ProductsDetails/ProductDetail';
 import { useParams } from 'react-router-dom';
 
-const Product_Detail = () => {
+const ProductDetails = () => {
   const { id } = useParams();
   return (
     <div className="min-h-screen bg-gray-50">
@@ -21,4 +21,4 @@ const Product_Detail = () => {
   );
 };
 
-export default Product_Detail;
+export default ProductDetails;
